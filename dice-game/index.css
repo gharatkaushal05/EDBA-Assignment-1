@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik",sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 100%;
+    min-height: 100vh;
+    background : linear-gradient(to right,#faeb2c, #f52789,#e900ff,#1685f8,#3d144c);
+}
+
+.dice-game{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 50%;
+    height: 70vh;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: rgba(100, 100, 120, 0.3) 0px 7px 29px 11px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-heading{
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px; /* Solution: Adjust font size */
+    color: black; /* Solution: Adjust font color */
+    margin-bottom: 20px; /* Solution: Add margin bottom */
+}
+
+.input-boxes{
+    margin-top: 30px;
+    width: 60%;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0px;
+    position: relative;
+}
+
+.input-group input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid red;
+}
+
+.input-group input:focus{
+    border-color: grey;
+    transition: 1.5s;
+}
+
+.input-boxes{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group i{
+    position: absolute;
+    color: red;
+    font-size: 17px;
+}
+
+.button{
+    margin-top: 40px;
+}
+
+.button input{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 4s ease;
+}
+
+.button input:hover{
+    background: linear-gradient(to right,#ff4b2b, #ff416c);
+}
+
+.gameplay-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main-game {
+    width: 40%;
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: rgba(100, 100, 120, 0.3) 0px 7px 29px 11px;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+}
+
+.players-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dice {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+.score {
+    font-size: 100px ;
+    color: #ff4b2b;
+}
+
+.roll-button{
+    font-size: large;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 0;
+    cursor: pointer;
+    padding: 20px;
+    width: 200px;
+}
+
+.gameplay-screen {
+    display: none;
+}
+
+.gameplay-screen.show {
+    display: flex;
+}
+
+#button-2{
+    background-color: #f5f5f5;
+    color: black;
+}
